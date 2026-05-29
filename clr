@@ -1,0 +1,2 @@
+pkill -f 'ringit' || true
+rm -f data/ringitdb.db

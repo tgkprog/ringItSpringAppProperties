@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+. j25
+JAVA_BIN="${JAVA_HOME:+$JAVA_HOME/bin/java}"
+if [[ -z "${JAVA_BIN}" ]]; then
+  JAVA_BIN="$(command -v java)"
+fi
+
+# SQLite does not have a built-in server mode.
+# To use a remote SQLite-compatible server (e.g. sqld / libSQL), set the URL:
+#   export RINGIT_DB_URL="http://127.0.0.1:8080"
+# then pass it as a property override below.
+"$JAVA_BIN" -jar target/ringit-0.0.1-SNAPSHOT.jar \
+  --spring.datasource.url="${RINGIT_DB_URL:-jdbc:sqlite:./data/ringitdb.db}"

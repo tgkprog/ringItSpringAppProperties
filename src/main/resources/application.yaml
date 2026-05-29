@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: ringit
+  datasource:
+    url: "${ringit.db.url}"
+    driver-class-name: "${ringit.db.driver}"
+    username: ""
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: "${ringit.db.dialect}"
+    open-in-view: false
+  thymeleaf:
+    cache: false
+  cache:
+    type: caffeine
+  sql:
+    init:
+      mode: never
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,caches
+  endpoint:
+    health:
+      show-details: always
+server:
+  port: 8080
+
+ringit:
+  default-time-zone: Asia/Kolkata
+  supported-time-zones:
+    - GMT
+    - America/New_York
+    - America/Chicago
+    - America/Denver
+    - America/Los_Angeles
+    - Europe/Berlin
+    - Asia/Kolkata
+    - Asia/Singapore
+    - Asia/Tokyo
+  db:
+    url: "jdbc:sqlite:./data/ringitdb.db"

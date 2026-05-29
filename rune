@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+. j25
+JAVA_BIN="${JAVA_HOME:+$JAVA_HOME/bin/java}"
+if [[ -z "${JAVA_BIN}" ]]; then
+  JAVA_BIN="$(command -v java)"
+fi
+
+"$JAVA_BIN" -jar target/ringit-0.0.1-SNAPSHOT.jar

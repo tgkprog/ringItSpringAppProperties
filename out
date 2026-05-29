@@ -1,0 +1,59 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.6)
+
+2026-05-29T15:22:06.529+05:30  INFO 144835 --- [ringit] [           main] sel2in.Main                              : Starting Main v0.0.1-SNAPSHOT using Java 25.0.3 with PID 144835 (/home/ubuntu/IdeaProjects/Ringit/target/ringit-0.0.1-SNAPSHOT.jar started by ubuntu in /home/ubuntu/IdeaProjects/Ringit)
+2026-05-29T15:22:06.544+05:30  INFO 144835 --- [ringit] [           main] sel2in.Main                              : No active profile set, falling back to 1 default profile: "default"
+2026-05-29T15:22:10.954+05:30  INFO 144835 --- [ringit] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-29T15:22:11.126+05:30  INFO 144835 --- [ringit] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interface.
+2026-05-29T15:22:13.545+05:30  INFO 144835 --- [ringit] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-05-29T15:22:13.583+05:30  INFO 144835 --- [ringit] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-29T15:22:13.585+05:30  INFO 144835 --- [ringit] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-29T15:22:13.661+05:30  INFO 144835 --- [ringit] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 6776 ms
+2026-05-29T15:22:15.207+05:30  INFO 144835 --- [ringit] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-29T15:22:15.532+05:30  INFO 144835 --- [ringit] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-29T15:22:17.492+05:30  INFO 144835 --- [ringit] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-29T15:22:17.616+05:30  INFO 144835 --- [ringit] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.sqlite.SQLiteJDBCLoader in an unnamed module (jar:nested:/home/ubuntu/IdeaProjects/Ringit/target/ringit-0.0.1-SNAPSHOT.jar/!BOOT-INF/lib/sqlite-jdbc-3.49.1.0.jar!/)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-05-29T15:22:17.954+05:30  INFO 144835 --- [ringit] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@7cecab19
+2026-05-29T15:22:17.957+05:30  INFO 144835 --- [ringit] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-29T15:22:18.084+05:30  INFO 144835 --- [ringit] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:sqlite:./data/ringitdb.db]
+	Database driver: SQLite JDBC
+	Database dialect: SQLiteDialect
+	Database version: 3.49.1
+	Default catalog/schema: undefined/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: SERIALIZABLE [default SERIALIZABLE]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-29T15:22:20.342+05:30  INFO 144835 --- [ringit] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-29T15:22:20.467+05:30  INFO 144835 --- [ringit] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29T15:22:20.736+05:30  INFO 144835 --- [ringit] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-29T15:22:23.298+05:30  INFO 144835 --- [ringit] [           main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-05-29T15:22:24.696+05:30  WARN 144835 --- [ringit] [           main] i.m.c.i.b.cache.CaffeineCacheMetrics     : The cache 'timeZones' is not recording statistics. No meters except 'cache.size' will be registered. Call 'Caffeine#recordStats()' prior to building the cache for metrics to be recorded.
+2026-05-29T15:22:25.122+05:30  INFO 144835 --- [ringit] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2026-05-29T15:22:25.515+05:30  INFO 144835 --- [ringit] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-05-29T15:22:25.546+05:30  INFO 144835 --- [ringit] [           main] sel2in.Main                              : Started Main in 20.938 seconds (process running for 23.078)
+2026-05-29T15:24:15.491+05:30  INFO 144835 --- [ringit] [nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [g_state={"i_l":0,"i_ll":1773253135530,"i_b":"VCjfZBPBZpotY1pQdnriZmDTExv8iruUfPimKofGiSg","i_e":{"enable_itp_optimization":0}}] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2026-05-29T15:24:15.508+05:30  INFO 144835 --- [ringit] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-29T15:24:15.510+05:30  INFO 144835 --- [ringit] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-29T15:24:15.516+05:30  INFO 144835 --- [ringit] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-05-29T15:25:06.677+05:30  INFO 144835 --- [ringit] [ionShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-29T15:25:06.690+05:30  INFO 144835 --- [ringit] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-29T15:25:06.715+05:30  INFO 144835 --- [ringit] [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-29T15:25:06.721+05:30  INFO 144835 --- [ringit] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-29T15:25:06.727+05:30  INFO 144835 --- [ringit] [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
